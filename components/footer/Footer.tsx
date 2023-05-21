@@ -25,6 +25,10 @@ const isIcon = (item: Item): item is IconItem =>
   // deno-lint-ignore no-explicit-any
   typeof (item as any)?.icon === "string";
 
+export interface Props {
+  sections?: Section[];
+}
+
 function SectionItem({ item }: { item: Item }) {
   return (
     <span class="text-primary-content">
@@ -57,71 +61,62 @@ function FooterContainer(
   return <div class={`py-6 px-4 sm:py-12 sm:px-0 ${_class}`}>{children}</div>;
 }
 
-export interface Props {
-  sections?: Section[];
-}
-
 function Footer({ sections = [] }: Props) {
   return (
-    <footer class="w-full rounded-b-lg bg-slate-200 flex flex-col divide-y divide-primary-content">
-      <div>
-        <div class="container w-full flex flex-col divide-y divide-primary-content">
-        </div>
-      </div>
-
+    <footer class="w-full bg-slate-200 rounded rounded-b-lg">
       <div>
         <div class="container w-full">
           <FooterContainer class="flex justify-between w-full">
-            <ul class="flex w-full ml-10 mr-10 items-center justify-between">
-              <li>
+            <ul class="flex w-full ml-10 mr-10 items-center justify-between text-sm font-sm">
+              <li class="flex flex-col items-center">
                 <a
                   href=""
                   target=""
                   rel="noopener noreferrer"
                   aria-label="Home logo"
                 >
-                  <div class="hover:text-purple-900">
+                  <div class="hover:text-purple-900 fill-current text-slate-400">
                     <IconHome class="w-9 h-9" />
-                    <span class="justify-center">Home</span>
+                    <span>Home</span>
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="flex flex-col items-center">
                 <a
                   href=""
                   target=""
                   rel="noopener noreferrer"
                   aria-label="Catalog logo"
                 >
-                  <div class="hover:text-purple-900">
+                  <div class="hover:text-purple-900 fill-current text-slate-400">
                     <IconBook class="w-9 h-9" />
-                    <span class="justify-center">Catalog</span>
+                    <span>Catalog</span>
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="flex flex-col items-center">
                 <a
                   href=""
                   target=""
                   rel="noopener noreferrer"
                   aria-label="Chat logo"
                 >
-                  <div class="hover:text-purple-900">
+                  <div class="hover:text-purple-900 fill-current text-slate-400">
                     <IconBrandHipchat class="w-9 h-9" />
-                    <span class="justify-center">Chat</span>
+                    <span>Chat</span>
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="flex flex-col items-center">
                 <a
                   href=""
                   target=""
                   rel="noopener noreferrer"
                   aria-label="Cart logo"
                 >
-                  <div class="hover:text-purple-900">
+                  <div class="hover:text-purple-900 fill-current text-slate-400">
                     <IconShoppingCart class="w-9 h-9" />
-                    <span class="justify-center">Cart</span>
+                    <span>Cart</span>
                   </div>
                 </a>
               </li>
