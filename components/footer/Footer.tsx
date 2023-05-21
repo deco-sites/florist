@@ -2,6 +2,13 @@ import Icon, {
   AvailableIcons,
 } from "$store/components/ui/Icon.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
+
+import IconHome from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/home.tsx";
+import IconBook from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/book.tsx";
+import IconBrandHipchat from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-hipchat.tsx";
+import IconShoppingCart from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/shopping-cart.tsx";
+
+
 import type { ComponentChildren } from "preact";
 
 export type IconItem = { icon: AvailableIcons };
@@ -59,113 +66,59 @@ export interface Props {
 
 function Footer({ sections = [] }: Props) {
   return (
-    <footer class="w-full bg-primary flex flex-col divide-y divide-primary-content">
+    <footer class="w-full bg-white flex flex-col divide-y divide-primary-content">
       <div>
         <div class="container w-full flex flex-col divide-y divide-primary-content">
-          <FooterContainer>
-            <Newsletter />
-          </FooterContainer>
-
-          <FooterContainer>
-            {/* Desktop view */}
-            <ul class="hidden sm:flex flex-row gap-20">
-              {sections.map((section) => (
-                <li>
-                  <div>
-                    <span class="font-medium text-xl text-primary-content">
-                      {section.label}
-                    </span>
-
-                    <ul
-                      class={`flex ${
-                        isIcon(section.children[0]) ? "flex-row" : "flex-col"
-                      } gap-2 pt-2 flex-wrap`}
-                    >
-                      {section.children.map((item) => (
-                        <li>
-                          <SectionItem item={item} />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </li>
-              ))}
-            </ul>
-
-            {/* Mobile view */}
-            <ul class="flex flex-col sm:hidden sm:flex-row gap-4">
-              {sections.map((section) => (
-                <li>
-                  <span class="text-primary-content">
-                    <details>
-                      <summary>
-                        {section.label}
-                      </summary>
-
-                      <ul
-                        class={`flex ${
-                          isIcon(section.children[0]) ? "flex-row" : "flex-col"
-                        } gap-2 px-2 pt-2`}
-                      >
-                        {section.children.map((item) => (
-                          <li>
-                            <SectionItem item={item} />
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </FooterContainer>
         </div>
       </div>
 
       <div>
         <div class="container w-full">
           <FooterContainer class="flex justify-between w-full">
-            <span class="flex items-center gap-1 text-primary-content">
-              Powered by{" "}
-              <a
-                href="https://www.deco.cx"
-                aria-label="powered by https://www.deco.cx"
-              >
-                <Icon id="Deco" height={20} width={60} strokeWidth={0.01} />
-              </a>
-            </span>
-
-            <ul class="flex items-center justify-center gap-2">
+            
+            <ul class="flex w-full items-center justify-center gap-x-20">
               <li>
                 <a
-                  href="https://www.instagram.com/deco.cx"
-                  target="_blank"
+                  href=""
+                  target=""
                   rel="noopener noreferrer"
-                  aria-label="Instagram logo"
+                  aria-label="Home logo"
                 >
-                  <Icon
-                    class="text-primary-content"
-                    width={32}
-                    height={32}
-                    id="Instagram"
-                    strokeWidth={1}
-                  />
+                  <IconHome class="w-9 h-9" />
+                  <span>Home</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="http://www.deco.cx/discord"
-                  target="_blank"
+                  href=""
+                  target=""
                   rel="noopener noreferrer"
-                  aria-label="Discord logo"
+                  aria-label="Catalog logo"
                 >
-                  <Icon
-                    class="text-primary-content"
-                    width={32}
-                    height={32}
-                    id="Discord"
-                    strokeWidth={5}
-                  />
+                  <IconBook class="w-9 h-9" />
+                  <span>Catalog</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  target=""
+                  rel="noopener noreferrer"
+                  aria-label="Chat logo"
+                >
+                  <IconBrandHipchat class="w-9 h-9" />
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  target=""
+                  rel="noopener noreferrer"
+                  aria-label="Cart logo"
+                >
+                  <IconShoppingCart class="w-9 h-9" />
+                  <span>Cart</span>
                 </a>
               </li>
             </ul>
