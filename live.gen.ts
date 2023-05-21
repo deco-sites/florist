@@ -25,13 +25,14 @@ import * as $$$$$$$$4 from "./sections/WishlistGallery.tsx";
 import * as $$$$$$$$5 from "./sections/CookieConsent.tsx";
 import * as $$$$$$$$6 from "./sections/ProductDetails.tsx";
 import * as $$$$$$$$7 from "./sections/Footer.tsx";
-import * as $$$$$$$$8 from "./sections/Carousel.tsx";
-import * as $$$$$$$$9 from "./sections/SearchResult.tsx";
-import * as $$$$$$$$10 from "./sections/Header.tsx";
-import * as $$$$$$$$11 from "./sections/Highlights.tsx";
-import * as $$$$$$$$12 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$13 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$14 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$8 from "./sections/ButtonsGrid.tsx";
+import * as $$$$$$$$9 from "./sections/Carousel.tsx";
+import * as $$$$$$$$10 from "./sections/SearchResult.tsx";
+import * as $$$$$$$$11 from "./sections/Header.tsx";
+import * as $$$$$$$$12 from "./sections/Highlights.tsx";
+import * as $$$$$$$$13 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$14 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$15 from "./sections/BannerGrid.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -155,36 +156,37 @@ const manifest = {
     "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$7,
-    "./islands/HeaderButton.tsx": $$$$$0,
-    "./islands/HeaderModals.tsx": $$$$$4,
-    "./islands/HeaderSearchbar.tsx": $$$$$3,
-    "./islands/Newsletter.tsx": $$$$$9,
-    "./islands/OutOfStock.tsx": $$$$$6,
-    "./islands/ProductImageZoom.tsx": $$$$$2,
-    "./islands/SearchControls.tsx": $$$$$5,
-    "./islands/ShippingSimulation.tsx": $$$$$10,
-    "./islands/SliderJS.tsx": $$$$$1,
-    "./islands/WishlistButton.tsx": $$$$$8,
+    "./islands/AddToCartButton.tsx": $$$$$10,
+    "./islands/HeaderButton.tsx": $$$$$8,
+    "./islands/HeaderModals.tsx": $$$$$2,
+    "./islands/HeaderSearchbar.tsx": $$$$$1,
+    "./islands/Newsletter.tsx": $$$$$3,
+    "./islands/OutOfStock.tsx": $$$$$0,
+    "./islands/ProductImageZoom.tsx": $$$$$5,
+    "./islands/SearchControls.tsx": $$$$$4,
+    "./islands/ShippingSimulation.tsx": $$$$$9,
+    "./islands/SliderJS.tsx": $$$$$6,
+    "./islands/WishlistButton.tsx": $$$$$7,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/florist/sections/BannerGrid.tsx": $$$$$$$$14,
-    "deco-sites/florist/sections/BannerPLP.tsx": $$$$$$$$12,
-    "deco-sites/florist/sections/Carousel.tsx": $$$$$$$$8,
+    "deco-sites/florist/sections/BannerGrid.tsx": $$$$$$$$15,
+    "deco-sites/florist/sections/BannerPLP.tsx": $$$$$$$$13,
+    "deco-sites/florist/sections/ButtonsGrid.tsx": $$$$$$$$8,
+    "deco-sites/florist/sections/Carousel.tsx": $$$$$$$$9,
     "deco-sites/florist/sections/CookieConsent.tsx": $$$$$$$$5,
     "deco-sites/florist/sections/DesignSystem.tsx": $$$$$$$$1,
     "deco-sites/florist/sections/Features.tsx": $$$$$$$$3,
     "deco-sites/florist/sections/Footer.tsx": $$$$$$$$7,
-    "deco-sites/florist/sections/Header.tsx": $$$$$$$$10,
-    "deco-sites/florist/sections/Highlights.tsx": $$$$$$$$11,
+    "deco-sites/florist/sections/Header.tsx": $$$$$$$$11,
+    "deco-sites/florist/sections/Highlights.tsx": $$$$$$$$12,
     "deco-sites/florist/sections/LinkTree.tsx": $$$$$$$$2,
     "deco-sites/florist/sections/ProductDetails.tsx": $$$$$$$$6,
     "deco-sites/florist/sections/ProductShelf.tsx": $$$$$$$$0,
-    "deco-sites/florist/sections/SearchResult.tsx": $$$$$$$$9,
-    "deco-sites/florist/sections/WhatsApp.tsx": $$$$$$$$13,
+    "deco-sites/florist/sections/SearchResult.tsx": $$$$$$$$10,
+    "deco-sites/florist/sections/WhatsApp.tsx": $$$$$$$$14,
     "deco-sites/florist/sections/WishlistGallery.tsx": $$$$$$$$4,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
