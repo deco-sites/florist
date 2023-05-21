@@ -63,7 +63,7 @@ export interface Props {
 
 function Footer({ sections = [] }: Props) {
   return (
-    <footer class="w-full bg-white flex flex-col divide-y divide-primary-content">
+    <footer class="w-full rounded-b-lg bg-slate-200 flex flex-col divide-y divide-primary-content">
       <div>
         <div class="container w-full flex flex-col divide-y divide-primary-content">
         </div>
@@ -72,7 +72,7 @@ function Footer({ sections = [] }: Props) {
       <div>
         <div class="container w-full">
           <FooterContainer class="flex justify-between w-full">
-            <ul class="flex w-full items-center justify-center gap-x-20">
+            <ul class="flex w-full ml-10 mr-10 items-center justify-between">
               <li>
                 <a
                   href=""
@@ -80,8 +80,10 @@ function Footer({ sections = [] }: Props) {
                   rel="noopener noreferrer"
                   aria-label="Home logo"
                 >
-                  <IconHome class="w-9 h-9" />
-                  <span>Home</span>
+                  <div class="hover:text-purple-900">
+                    <IconHome class="w-9 h-9" />
+                    <span class="justify-center">Home</span>
+                  </div>
                 </a>
               </li>
               <li>
@@ -91,8 +93,10 @@ function Footer({ sections = [] }: Props) {
                   rel="noopener noreferrer"
                   aria-label="Catalog logo"
                 >
-                  <IconBook class="w-9 h-9" />
-                  <span>Catalog</span>
+                  <div class="hover:text-purple-900">
+                    <IconBook class="w-9 h-9" />
+                    <span class="justify-center">Catalog</span>
+                  </div>
                 </a>
               </li>
               <li>
@@ -102,8 +106,10 @@ function Footer({ sections = [] }: Props) {
                   rel="noopener noreferrer"
                   aria-label="Chat logo"
                 >
-                  <IconBrandHipchat class="w-9 h-9" />
-                  <span>Chat</span>
+                  <div class="hover:text-purple-900">
+                    <IconBrandHipchat class="w-9 h-9" />
+                    <span class="justify-center">Chat</span>
+                  </div>
                 </a>
               </li>
               <li>
@@ -113,8 +119,10 @@ function Footer({ sections = [] }: Props) {
                   rel="noopener noreferrer"
                   aria-label="Cart logo"
                 >
-                  <IconShoppingCart class="w-9 h-9" />
-                  <span>Cart</span>
+                  <div class="hover:text-purple-900">
+                    <IconShoppingCart class="w-9 h-9" />
+                    <span class="justify-center">Cart</span>
+                  </div>
                 </a>
               </li>
             </ul>
