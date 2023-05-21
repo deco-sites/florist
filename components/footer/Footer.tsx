@@ -1,13 +1,10 @@
-import Icon, {
-  AvailableIcons,
-} from "$store/components/ui/Icon.tsx";
+import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
 
 import IconHome from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/home.tsx";
 import IconBook from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/book.tsx";
 import IconBrandHipchat from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-hipchat.tsx";
 import IconShoppingCart from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/shopping-cart.tsx";
-
 
 import type { ComponentChildren } from "preact";
 
@@ -75,7 +72,6 @@ function Footer({ sections = [] }: Props) {
       <div>
         <div class="container w-full">
           <FooterContainer class="flex justify-between w-full">
-            
             <ul class="flex w-full items-center justify-center gap-x-20">
               <li>
                 <a
